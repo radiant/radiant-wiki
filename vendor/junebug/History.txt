@@ -1,0 +1,178 @@
+= 0.0.31 2007-04-22
+
+* User list and user history pages
+
+= 0.0.30 2007-04-21
+
+* Small style tweaks, make header smaller
+* Changed quicksave checkbox to 'minor update' button
+* Fixed issue with creation of pages when first viewing them, before explicitly saving
+* Orphans page (/all/orphans)
+* Backlink bugfix
+
+= 0.0.29 2007-04-15
+
+* Support Unicode wikiwords. Thanks Julian Tarkhanov
+* Disable suprious warnings when running tests.  Thanks Julian Tarkhanov
+* Css tweak to prevent overflow in pre tags. Thanks Leslie Viljoen
+
+= 0.0.28 2007-01-20
+
+* Fix uninitialized constant Mongrel::Camping error
+* Fix rails 2 deprecation warnings on startup
+* Added search based on Barry Arthur's work.  Thanks Barry!
+
+= 0.0.27 2006-12-18
+
+* Quick bugfix release
+
+= 0.0.26 2006-12-18
+
+* Feed cleanup, fixes id issue with google reader
+* Removed dependency on Redcloth.  Added latest (128) revision of Redcloth to ext dir to fix autolinking issue.
+
+= 0.0.25 2006-12-01
+
+* Feed page url wrong.  Fixes #6983. Thanks Robert Gogolok
+* Don't show diff link for version < 1 in feed.  Fixes ##6984. Thanks Robert Gogolok
+
+= 0.0.24 2006-11-29
+
+* Accesskey attributes added for edit(e) and save(s).  Thanks willcodeforfoo!
+* Edit form tweaks
+
+= 0.0.23 2006-11-28
+
+* *EXISTING USERS PLEASE READ THE RELEASE NOTES*
+* Cleaned up redirect handling
+* Renamed 'url' config parameter to 'feedurl'
+* Make edit button always visible
+* Fix for camping error on initial load
+* Allow dashes in wikiwords
+* More tests
+
+= 0.0.22 2006-11-28
+
+* *EXISTING USERS PLEASE READ THE RELEASE NOTES*
+* Data dump improvements
+* Removed yahoo grids (weren't using them), page structure simplification
+* Changed page naming convention (underscores in url, spaces in title and db) 
+* Changed header format to help avoid title duplication in text
+
+= 0.0.21 2006-11-26
+
+* *EXISTING USERS PLEASE READ THE RELEASE NOTES*
+* INT and TERM signals handling -- Thanks zimbatm!
+* Support for databases other than sqlite3 -- Thanks Robert Gogolok
+
+= 0.0.20 2006-11-23
+
+* Rake task to update local documentation (rake update:help)
+* Documentation updates
+* Version bugfix. Thanks DJ
+
+= 0.0.19 2006-11-22
+
+* *BE SURE TO READ THE RELEASE NOTES*
+* 'Recent Pages' page improvements
+* Atom feed improvements
+* Rename gem from junebug to junebug-wiki
+* Renamed 'static' dir to 'public'
+* Performance improvements
+
+= 0.0.18 2006-11-21
+
+* Changed diff output to compare unformatted text
+* Converted to using hoe
+* Quicksave option (doesn't increment version)
+* Signup redirect bugfix
+* External lib dir (ext)
+
+= 0.0.17 2006-11-19
+
+* Quick bugfix for login redirects behind proxy
+
+= 0.0.16 2006-11-19
+
+* Style tweaks
+* Login/logout redirects you back to the page you were on
+
+= 0.0.15 2006-11-17
+
+* Loosen up mongrel requirements for windows users -- thanks deejay
+* Bugfix for static file issue #6536. Thanks zimbatm
+* Added css for wrapping pre text
+* Changed wikiword syntax to [[link]]
+* Unit testing improvements
+* Command line help
+ 
+= 0.0.14 2006-11-14
+
+* Page title cleanup
+* Rake task reorg
+* Dump task
+* Added error checking to generator
+
+= 0.0.13 2006-11-14
+
+* Link style improvement/simplification
+* Autolinking urls
+* use user.role to determine admin rights
+* is_admin?, logged_in?
+
+= 0.0.12 2006-11-13
+
+* content div bugfix
+
+= 0.0.11 2006-11-13
+
+* Added revert
+* Versioning bugfix
+* Changed delete operation
+* Added 'role' user field
+
+= 0.0.10 2006-11-12
+
+* Submit bugfix
+* More unit tests
+ 
+= 0.0.9 2006-11-10
+
+* Mosquito unit tests
+
+= 0.0.8 2006-11-08
+
+* Style work
+* Add rss link to head
+* Stylesheet update rake task
+
+= 0.0.7 2006-11-07
+
+* Redirect bugfix for proxied sites
+ 
+= 0.0.6 2006-11-07
+
+* Delete pages
+* More style work
+
+= 0.0.5 2006-11-06
+
+* Style cleanups
+* Security fix
+* Format test page
+
+= 0.0.4 2006-11-05
+
+* Readonly pages
+* Start page
+* Bugfixes
+
+= 0.0.3 2006-10-30
+
+* User accounts
+* Daemonize
+* Default page fixtures
+
+= 0.0.2 2006-10-22
+
+* Initial release

@@ -1,0 +1,33 @@
+# The default wiki start page
+startpage: Documentation
+
+# Server configuration
+host: 127.0.0.1
+port: 3301
+sitepath: /
+siteurl: http://wiki.radiantcms.org
+
+# RSS configuration
+feedtitle: Radiant CMS Wiki
+feedurl: http://feeds.feedburner.com/Wiki
+
+# Database configuration
+dbconnection:
+#
+# Sqlite3 configuration
+  adapter: sqlite3
+  database: junebug.db
+
+## Postgresql configuration
+#  adapter: postgresql
+#  database: junebug
+#  username:
+#  password:
+#  socket: /tmp
+
+## Mysql configuration
+#  adapter: mysql
+#  database: junebug
+#  username:
+#  password:
+#  host: localhost

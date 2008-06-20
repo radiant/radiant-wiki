@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+%w(
+  .
+  vendor/junebug/lib
+).reverse.each { |dir| $:.unshift(File.dirname(__FILE__) + "/" + dir) }
+
+require 'junebug/config'
+
+JUNEBUG_ROOT = ENV['JUNEBUG_ROOT'] = File.dirname(File.expand_path(__FILE__))
+
+system "camping #{Junebug::Config.script} -C -d junebug.db -l junebug.log"

@@ -1,0 +1,81 @@
+= 0.0.28 2007-01-20
+
+Existing users be sure to read the updating page at http://www.junebugwiki.com/JunebugUpdating
+
+In particular, don't forget to rake update:everything
+
+Also, I upped the required versions of the mongrel, daemons, and activerecord gems.  I've been getting lots of bug reports about deprecation warnings and niggling errors that users experienced when they were running newer gems.  Particularly with the switch to Rails 1.2.  I don't have time to test all combinations, so I'm setting the dependencies to what I'm using.
+
+
+= 0.0.26 2006-12-18
+
+A couple of changes to the config.yml parameters were made as part of the feed cleanup.  If you have an existing Junebug wiki, you may need to make the following changes:
+
+* feedurl is now the url of the public feed, whether through a proxy, or using a feed hosting service.
+* siteurl is the base url of the wiki.  The feed generator will use this to point to the feed entries to the wiki.
+
+Both of these parameters are now optional, so if you just serve your site locally, just leave them commented out.
+
+Example: for www.junebugwiki.com, which is served through an apache proxy, I'm using the following:
+
+feedurl: http://www.junebugwiki.com/all/feed
+siteurl: http://www.junebugwiki.com
+
+
+= 0.0.23 2006-11-28
+
+Robert Gogolok rightly pointed out that the 'url' parameter in config.yml was confusing, so I renamed it 'feedurl'.  You will need to make this change to any existing junebug wikis.
+
+Also, as part of this change, I cleaned up the redirect handling code.  This might affect users operating a proxied Junebug wiki.  I will add some notes to http://www.junebugwiki.com for setting up an apache proxy for Junebug.
+
+
+= 0.0.22 2006-11-28
+
+The wikiword syntax has changed slightly.  Starting in this version, wikiwords can not contain underscores. Furthermore, in page urls, spaces will now be replaced by underscores.  Example:
+
+Invalid wikiword link syntax: [[Test_page]]
+
+Valid wikiword link syntax:  [[Test page]]
+Corresponding page url: http://www.wiki.com/Test_page
+
+Also, you will notice that the page title is now presented in the page body rather than the header.  I was finding that the previous location in the header usually led me to rewrite the title in the body for clarity.
+
+
+= 0.0.21 2006-11-26
+
+The database configuration in config.yml has been changed to allow easy support for databases other than sqlite3. Existing junebug installations will need to make the following changes:
+
+In config.yml, add the following lines:
+
+dbconnection:
+  adapter: sqlite3
+  database: junebug.db
+
+And be sure to use spaces to indent!
+
+
+= 0.0.19 2006-11-22
+
+Existing junebug installations will need to make the following changes:
+
+# The name of the gem has changed to junebug-wiki.  This means that to update junebug, you will need to:
+
+gem uninstall junebug
+gem install junebug-wiki
+
+# An additional configuration parameter was added to config.yml.  To update existing wikis, add the parameter:
+
+feedtitle: 'Wiki Updates'
+
+# The 'static' directory has been renamed to 'public'.  You will need to rename this directory manually, or just run 'rake update:deploydir'.
+
+Sorry for all the instability -- but I figure it is better now when the userbase is 3 than a month from now when it's 30 (ha!)
+
+
+= 0.0.15 2006-11-17
+
+The wikiword syntax changed in this release from just straight WikiLink to [[WikiLink]].  Just using camelcase was having trouble coexisting with textile, so I opted instead for the instiki convention which is less problematic.
+
+This change will reqire updating any pre-existing pages to the new wikiword syntax.
+
+Note that this format also supports the [[WikiLink|different label]] syntax.

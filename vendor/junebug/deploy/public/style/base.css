@@ -1,0 +1,308 @@
+/* Baseline Junebug style */
+
+a:link, a:visited {
+/*    text-decoration: none;*/
+    color: #0000cc;
+}
+a:hover {
+/*    text-decoration: underline;*/
+    color: #0000cc;
+}
+
+form { display: inline; }
+
+span.actions a {
+    margin-right: 5px;
+}
+
+input.button {
+    margin: 5px 4px;
+}
+
+input, textarea {
+    padding: 4px 2px 1px 2px;
+    margin-bottom: 5px;
+/*    font-family:"Bitstream Vera Sans Mono", "Monaco", "Courier", monospace;*/
+}
+
+input, textarea, pre, code {
+    font-family: monospace;
+}
+
+textarea {
+    width: 100%;
+}
+
+del {
+    color: #999;
+    background-color: #ddd;
+}
+
+ins {
+    background-color: #cfc;
+    text-decoration: none;
+    color: #000;
+}
+
+	
+/* PAGE STRUCTURE */
+body {
+    background:#d7d7d7;
+    text-align: center;
+    min-width: 800px;
+}
+
+#doc {
+    font-family: 'Lucida Grande', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#hd {
+/*    border-top: 6px solid #809fff;*/
+    background-color: #6677aa;
+    padding: 8px 25px 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#hd #userlinks {
+    float: right;
+}
+
+#hd #search {
+    float: right;
+/*    margin-top: 5px;*/
+    margin-right: 10px;
+}
+
+#hd #search input {
+/*    margin-bottom: 0px;*/
+    margin: 0px;
+}
+
+#hd a {
+    color: #ffffff;
+}
+
+/*#hd h1 a {
+    color: #ffffff;
+}
+#hd h1 a:link, #hd h1 a:visited {
+    text-decoration: none;
+}
+
+
+#hd h1 {
+    font-size: 167%;
+    padding-bottom: 5px;
+    font-weight: normal;
+}*/
+
+#bd {
+    background-color: #ffffff;
+	border:5px solid #929292;
+	border-width:0 5px 5px 0;
+}
+
+#ft {
+    border: 1px solid #eee;
+    background-color: #ddd;
+    color: #333;
+    font-size: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+.formbox {
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+    padding: 0 15px 10px 15px;
+}
+
+.login {
+    position: absolute;
+    left: 50%;
+    width: 220px;
+    margin-left: -150px;
+    margin-top: 50px;
+    background-color: #ddf;
+    padding: 20px 40px;
+    border: 4px solid #aaf;
+    text-align: center;
+}
+
+.login h1 {
+    font-size: 140%;
+    margin-bottom: 10px;
+}
+
+.login label {
+    font-weight: bold;
+}
+
+.login p.notice {
+    font-weight: bold;
+    background-color: #ffe;
+    border: 2px solid #ffa;
+    padding: 3px;
+    margin: 10px 0;
+    color: #822;
+}
+
+.admin {
+    float: left;
+/*    background-color: #ffa;*/
+}
+
+.admin input.button {
+    background-color: #ffa;
+    font-size: 85%;
+    margin: 0;
+}
+
+/* WIKI CONTENT STYLES */
+.content {
+    font-size: 107%;
+    padding: 20px 25px;
+    min-height: 300px;
+}
+
+.content h2, .content h3, .content h4, .content h5 {
+/*    color: #04766f;*/
+    font-weight: normal;
+    color: #447744;
+    border-bottom: 2px dotted #bbb;
+    margin-left: -5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 1px 5px;
+}
+
+.content h1 {
+    font-size:  182%;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #bbb;
+}
+
+.content h2 {
+    font-size:  140%;
+    border-bottom: 2px dotted #bbb;
+/*    margin-top: 25px;*/
+/*    margin-bottom: 10px;*/
+    background-color: #edf9ef;
+}
+
+.content h3 {
+    font-size:  129%;
+/*    margin-top: 25px;*/
+/*    margin-bottom: 10px;*/
+}
+
+.content h4 {
+    font-size:  107%;
+/*    margin-top: 15px;*/
+/*    margin-bottom: 10px;*/
+}
+
+.content h5 {
+    font-size:  100%;
+/*    margin-top: 15px;*/
+/*    margin-bottom: 10px;*/
+}
+
+
+.content ul {
+    list-style-type: square;
+    margin: 10px 0px 10px 15px;
+}
+
+.content li {
+    line-height: 150%;
+}
+
+.content ol {
+    list-style-type: decimal;
+    margin: 10px 0px 10px 24px;
+}
+
+.content p {
+    line-height: 145%;
+    margin: 15px 0px;
+}
+
+.content em {
+    font-style: italic;
+}
+
+.content strong {
+    font-weight: bold;
+/*    background-color: #ffffcc;
+    padding: 3px;*/
+}
+
+.content label {
+    font-weight: bold;
+}
+
+.content code {
+/*    font-family:"Bitstream Vera Sans Mono", "Monaco", "Courier", monospace;*/
+    background: #f4f4f4;
+    padding: 2px;
+}
+
+.content code.clean {
+/*    font-family:"Bitstream Vera Sans Mono", "Monaco", "Courier", monospace;*/
+    background: #ffffff;
+    padding: 2px;
+}
+
+.content pre code{
+    padding: 0px;
+}
+
+.content pre {
+/*    font-family:"Bitstream Vera Sans Mono", "Monaco", "Courier", monospace;*/
+    display: block;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    margin: 15px 0px;
+    overflow: auto;
+}
+
+.content pre.clean {
+    display: block;
+    background: #ffffff;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+/* http://longren.org/2006/09/27/wrapping-text-inside-pre-tags */
+/* Browser specific (not valid) styles to make preformatted text wrap */
+.content pre { 
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.content table {
+}
+
+.content th, .content td {
+    padding: 2px 5px 2px 5px;
+    border: solid #eee;
+    vertical-align: top;
+}
+
+.content th {
+    font-weight: bold;
+    background-color: #d7e0ff;
+}
