@@ -396,7 +396,7 @@ module Junebug::Views
       yield
       p {
         a :href => Junebug.config['feedurl'] do
-        img :src => '/images/feed-icon-14x14.png', :style => 'vertical-align: middle'
+          img :src => '/images/feed-icon-14x14.png', :style => 'vertical-align: middle'
         end
         text ' '
         a :href => Junebug.config['feedurl'] do
@@ -408,7 +408,7 @@ module Junebug::Views
         text " <small>v#{Junebug::VERSION::STRING}</small>. "
       }
       p {
-        text "Web Site Design, Logo, Etc. Copyright &copy; 2006&#8211;#{Date.today.year}, John W. Long. All Rights Reserved."
+        text "Web Site Design, Logo, Etc. Copyright &copy; 2006&#8211;#{Date.today.year}, John W. Long. All Rights Reserved.<br/>Hosting is graciously provided by the kind folks at <a href=\"http://avlux.net\">AVLUX</a>."
       }
     end
   end
