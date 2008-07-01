@@ -32,6 +32,8 @@ module Junebug::Views
               _separator
               a(:href => 'http://dev.radiantcms.org/') { text 'Development' }
               _separator
+              a(:href => 'http://radiantcms.org/mailing-list/') { text 'Mailing List' }
+              _separator
               a(:href => 'http://radiantcms.org/blog/') { text 'Weblog' }
               _separator
               a(:href => 'http://radiantcms.org/podcast/') { text 'Podcast' }
